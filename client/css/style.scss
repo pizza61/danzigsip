@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext');
+
+$font: "Roboto", sans-serif;
+$kolor: #0a8541;
+
+html, body, #info {
+    height: 100%;
+}
+
+body {
+    font-family: $font;
+    margin: 0;
+    background: #303033;
+    color: white;
+}
+#map {
+    
+}
+
+#info {
+    display: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: #0073b1;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    font-size: 90%;
+    padding: 8px 20px;
+    transition: 200ms;
+}
+
+button:hover {
+    background: rgba(0, 115, 177, 0.8);
+}
+
+.odjazd {
+    display: flex; 
+    justify-content: space-between;
+    font-size: 200%;
+
+    &:nth-child(odd) {
+        background: #222;
+    }
+}
+
+.bLinia {
+    padding: 20px;
+    width: 60px;
+    text-align: center;
+    background: $kolor;
+}
+
+.bKierunek, .bEst {
+    padding: 20px;
+}
+
+.message {
+    padding: 5px;
+    height: 22px;
+    text-align: center;
+    display: block;
+    color: white;
+    background: #0073b1;
+}
+
+.top {
+    display: flex;
+    background: $kolor;
+    justify-content: space-between;
+}
+
+.top-item {
+    font-size: 250%;
+    padding: 15px;
+}
+
+.bottom {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    background: #303033;
+}
+
+.card {
+    flex-grow: 1;
+}
